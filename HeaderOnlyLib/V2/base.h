@@ -10,7 +10,7 @@ namespace Base
     public:
         void Do()
         {
-            std::cout << "Method 'Base::Do' by версии '2' completed his work with the result: " << b << ' ' << a << std::endl;
+            std::cout << "Method 'Base::Do' by version '2' completed his work with the result: " << b << ' ' << a << std::endl;
         }
     private:
         int b = 20;            

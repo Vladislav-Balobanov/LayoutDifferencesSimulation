@@ -3,19 +3,28 @@
 
  #include <iostream>
 
-namespace Base
+#ifdef PROJ_DOMAIN
+namespace PROJ_DOMAIN
 {
-    class base
+#endif
+    namespace Base
     {
-    public:
-        void Do()
+        class base
         {
-            std::cout << "Method 'Base::Do' by version '1' completed his work with the result: " << a << ' ' << b << std::endl;
-        }
-    private:
-        int a = 10;
-        int b = 20;            
-    };
+        public:
+            void Do()
+            {
+                std::cout << "Method 'Base::Do' by version '1' completed his work with the result: " << a << ' ' << b << std::endl;
+            }
+        private:
+            int a = 10;
+            int b = 20;
+        };
+    }
+
+#ifdef PROJ_DOMAIN
 }
+using namespace PROJ_DOMAIN;
+#endif
 
 #endif /* BASE_H */
