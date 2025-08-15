@@ -7,7 +7,7 @@
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "buildRoot": "${projectDir}\\.build\\${name}",
       "installRoot": "${projectDir}\\.install\\${name}",
-      "cmakeCommandArgs": " -DCMAKE_BUILD_TYPE=Debug -DALPHA_MSVC_STATIC_RT=0 -T v142",
+      "cmakeCommandArgs": " -DCMAKE_BUILD_TYPE=Debug",
       "buildCommandArgs": "",
       "ctestCommandArgs": ""
     },
@@ -18,7 +18,7 @@
       "inheritEnvironments": [ "msvc_x64_x64" ],
       "buildRoot": "${projectDir}\\.build\\${name}",
       "installRoot": "${projectDir}\\.install\\${name}",
-      "cmakeCommandArgs": " -DCMAKE_BUILD_TYPE=RelWithDebInfo -DALPHA_MSVC_STATIC_RT=0 -T v142",
+      "cmakeCommandArgs": " -DCMAKE_BUILD_TYPE=RelWithDebInfo",
       "buildCommandArgs": "",
       "ctestCommandArgs": ""
     }
